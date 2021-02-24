@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="10dp"
+        android:text="Sign In"
+        android:textStyle="bold"
+        android:textSize="35dp"/>
+
+    <TextView
+        android:id="@+id/newuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:text="New user?" />
+
+    <TextView
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/newuser"
+        android:layout_below="@+id/signin"
+        android:text="Create an account"
+        android:layout_marginLeft="5dp"
+        android:onClick="register"
+        android:textColor="#34558b"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/emai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email address"
+        android:layout_below="@+id/newuser"
+        android:textColor="#34558b"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username_email"
+        android:layout_marginLeft="10dp"
+        android:background="#FF9800"
+        android:layout_below="@+id/emai"
+        android:layout_marginRight="10dp"
+        android:maxLines="1"
+        app:met_floatingLabel="normal"
+        android:hint="Enter your Email"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/username_email"
+        android:layout_marginTop="20dp"
+        android:background="#34558b"
+        android:onClick="con"
+        android:textSize="15dp"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="10dp"
+        android:text="Continue" />
+
+
+</RelativeLayout>

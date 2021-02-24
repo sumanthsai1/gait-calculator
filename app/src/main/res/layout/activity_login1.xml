@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".LoginActivity1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="10dp"
+        android:text="Enter your"
+        android:textSize="35dp"/>
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/write"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="10dp"
+        android:text="password"
+        android:textSize="35dp"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="58dp"
+        android:layout_height="52dp"
+        android:layout_below="@id/pass"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/personel"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_below="@+id/pass"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/imageView3"
+        android:text="PERSONAL ACCOUNT" />
+    <TextView
+        android:id="@+id/personel_email"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_below="@+id/personel"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        android:layout_toRightOf="@+id/imageView3"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/personel_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginLeft="10dp"
+        android:textColor="#34558b"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:text="Password" />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_marginLeft="10dp"
+        android:maxLines="1"
+        android:layout_below="@+id/personel_pass"
+        android:layout_marginRight="10dp"
+        app:met_floatingLabel="normal"
+        android:hint="Enter your Password"/>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="30dp"
+        android:background="#34558b"
+        android:textSize="15dp"
+        android:onClick="login"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="10dp"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password"
+        android:textSize="15dp"
+        android:onClick="forget"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#34558b"
+        android:layout_below="@id/password"/>
+
+    <TextView
+        android:id="@+id/back_to_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sign in to a different account"
+        android:textSize="15dp"
+        android:onClick="goback"
+        android:layout_marginLeft="10dp"
+        android:textColor="#34558b"
+        android:layout_below="@+id/forget_password"/>
+
+
+</RelativeLayout>

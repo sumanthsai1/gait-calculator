@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.Test.TestFragment">
+
+
+    <include
+        android:id="@+id/home_bar"
+        layout="@layout/test_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="58dp"
+        android:layout_height="52dp"
+        android:layout_below="@id/home_bar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:ignore="VectorDrawableCompat" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:text="Test your Gait"
+        android:layout_below="@+id/home_bar"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/imageView3"
+        android:layout_marginLeft="50dp"
+        android:text="START"/>
+
+
+
+    <TextView
+        android:id="@+id/title_age"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Age"
+        android:layout_below="@+id/start"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/title_cadence"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Candence"
+        android:layout_below="@+id/title_age"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/title_steptime"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Step Time"
+        android:layout_below="@+id/title_cadence"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/title_stridetime"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Stride Time"
+        android:layout_below="@+id/title_steptime"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_age"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/start"
+        android:layout_below="@id/start"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/edit_candence"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/start"
+        android:layout_below="@id/edit_age"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/edit_steptime"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/start"
+        android:layout_below="@id/edit_candence"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/edit_stridetime"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/start"
+        android:layout_below="@id/edit_steptime"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note : Kindly On the Bluetooth for the test"
+        android:layout_below="@+id/title_stridetime"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:textColor="#34558b"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/final_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@+id/title_stridetime"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:visibility="visible"
+        android:background="@drawable/background_gradient_stage1"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/final_note1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@+id/title_stridetime"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:visibility="visible"
+        android:background="@drawable/background_gradient_stage1"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/final_note2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@+id/final_note1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        android:background="@drawable/background_gradient_stage1"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/final_note3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@+id/final_note2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        android:background="@drawable/background_gradient_stage1"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
